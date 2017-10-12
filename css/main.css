@@ -113,14 +113,87 @@ textarea {
 body {
     font-family: Suisse, sans-serif;
     font-size: 16px;
+    letter-spacing: 1.5px;
     line-height: 1.5;
+    color: #fff;
 }
 
+.header {
+    background-image: url(../img/header-background.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 40px 32px;
 
+}
 
+@media screen and (min-width: 768px) {
+    .header {
+        padding: 80px 100px;
+    }
+}
 
+.header_logo {
+    margin-bottom: 32px;
+}
 
+@media screen and (min-width: 768px) {
+    .header_logo {
+        margin-bottom: 64px;
+    }
+}
 
+.header_logo-image {
+    max-width: 100px;
+}
+
+.header_content {
+    display: grid;
+    margin: 0 auto;
+    max-width: 1280px;
+}
+
+@media screen and (min-width: 768px) {
+    .header_content {
+        grid-template-columns: 50% 50%;
+    }
+}
+
+.header_half:first-child {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.header_half:last-child {
+    grid-column: 1;
+    grid-row: 3;
+}
+
+@media screen and (min-width: 768px) {
+    .header_half:first-child {
+        grid-column: 1;
+    }
+
+    .header_half:last-child {
+        grid-column: 2;
+        grid-row: 2;
+        margin-left: 100px;
+    }
+}
+
+.header_event-title {
+    font-weight: normal;
+    margin: 0;
+}
+
+.header_event-date {
+    font-size: 1em;
+}
+
+.header_event-location {
+    font-size: 1em;
+    font-weight: normal;
+}
 
 
 
