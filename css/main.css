@@ -134,7 +134,8 @@ body {
 }
 
 .header_logo {
-    margin-bottom: 32px;
+    margin: 0 auto 32px;
+    max-width: 1280px;
 }
 
 @media screen and (min-width: 768px) {
@@ -301,6 +302,24 @@ body {
 .afterparty {
     background: #fe5a2f;
     min-height: 100px;
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin: 0 auto;
+    max-width: 1280px;
+    padding: 300px 32px 40px;
+}
+
+@media screen and (min-width: 768px) {
+    .footer {
+        padding: 300px 100px 80px;
+    }
+}
+
+.footer_half:last-child {
+    text-align: right;
 }
 
 
