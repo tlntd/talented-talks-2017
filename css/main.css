@@ -342,7 +342,34 @@ body {
 
 .afterparty {
     background: #fe5a2f;
+    color: #f5e2bf;
     min-height: 100px;
+    display: grid;
+    grid-template-columns: 60% 40%;
+}
+
+.afterparty_pattern {
+    font-size: 5em;
+    font-weight: bold;
+    line-height: 1;
+    margin: 0;
+    overflow: hidden;
+    position: relative;
+}
+
+.afterparty_pattern-lines {
+    position: absolute;
+    right: 20px;
+    top: -30px;
+}
+
+.afterparty_pattern-line {
+    transform: rotate(-4deg);
+}
+
+.afterparty_info {
+    margin: 32px;
+    transform: rotate(-4deg);
 }
 
 .footer {
@@ -350,12 +377,12 @@ body {
     grid-template-columns: 50% 50%;
     margin: 0 auto;
     max-width: 1280px;
-    padding: 300px 32px 40px;
+    padding: 40px 32px;
 }
 
 @media screen and (min-width: 768px) {
     .footer {
-        padding: 300px 100px 80px;
+        padding: 80px 100px;
     }
 }
 
