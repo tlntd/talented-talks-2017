@@ -147,6 +147,23 @@ body {
     max-width: 100px;
 }
 
+.header_logo-text {
+    background: #fff;
+    color: #000;
+    height: 25px;
+    margin: 8px auto;
+    transform: rotate(-6deg) skew(-6deg);
+    width: 85px;
+}
+
+.header_logo-text > span {
+    display: inline-block;
+    font-weight: bold;
+    position: relative;
+    top: 1px;
+    transform: rotate(2deg);
+}
+
 .header_content {
     margin: 0 auto;
     max-width: 1280px;
