@@ -124,7 +124,7 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    padding: 40px 32px;
+    padding: 40px 16px;
 }
 
 @media screen and (min-width: 768px) {
@@ -171,8 +171,21 @@ body {
 }
 
 .header_event-title {
+    font-size: 1em;
     font-weight: normal;
     margin: 0;
+}
+
+@media screen and (min-width: 480px) {
+    .header_event-title {
+        font-size: 1.5em;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .header_event-title {
+        font-size: 2em;
+    }
 }
 
 .header_event-date {
@@ -204,8 +217,14 @@ body {
 }
 
 .info {
-    padding: 64px;
+    padding: 32px 16px;
     text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+    .info {
+        padding: 64px;
+    }
 }
 
 .info > p {
