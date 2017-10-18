@@ -106,6 +106,13 @@ textarea {
 
 @font-face {
     font-family: Suisse;
+    src: url(../fonts/SuisseIntl-RegularItalic.otf);
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: Suisse;
     src: url(../fonts/SuisseIntl-Bold.otf);
     font-weight: bold;
 }
