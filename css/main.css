@@ -126,6 +126,118 @@ body {
     line-height: 1.5;
 }
 
+.header-bar {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: -100px;
+    height: 68px;
+    padding: 16px;
+    background: rgba(67, 17, 70, 0.9);
+    transition: top .2s ease-in-out;
+    z-index: 5;
+}
+
+.header-bar__display {
+    top: 0;
+}
+
+.header-bar_logo-container {
+    display: inline-block;
+    width: 66px;
+    height: 68px;
+    border-right: 1px solid #fff;
+}
+
+@media screen and (min-width: 480px) {
+    .header-bar {
+        padding: 16px 32px;
+    }
+
+    .header-bar_logo-container {
+        width: 82px;
+    }
+
+}
+
+.header-bar_logo {
+    margin: 0 auto;
+}
+
+.header-bar_logo-image {
+    max-width: 50px;
+}
+
+.header-bar_logo-text {
+    background: #fff;
+    color: #000;
+    height: 16px;
+    margin: 4px 0;
+    transform: rotate(-6deg) skew(-6deg);
+    width: 50px;
+}
+
+.header-bar_logo-text > span {
+    display: inline-block;
+    font-size: 0.6em;
+    font-weight: bold;
+    position: relative;
+    top: -6px;
+    left: 5px;
+}
+
+.header-bar_info {
+    display: inline-block;
+    font-size: 0.79em;
+    position: relative;
+    top: -15px;
+    margin-left: 16px;
+}
+
+@media screen and (min-width: 480px) {
+    .header-bar_info {
+        top: -10px;
+        font-size: 1em;
+        margin-left: 32px;
+    }
+}
+
+.header-bar_info > p {
+    font-size: 0.9em;
+    margin: 0;
+}
+
+.header-bar_info > p:first-child {
+    color: #fe5a2f;
+}
+
+.header-bar_register-button {
+    display: none;
+    position: absolute;
+    margin-left: auto;
+    margin-right: 32px;
+    left: 0;
+    right: 0;
+    text-align: right;
+}
+
+@media screen and (min-width: 640px) {
+    .header-bar_register-button {
+        display: inline-block;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .header-bar_register-button {
+        margin-right: auto;
+        text-align: center;
+    }
+}
+
+.header-bar_register-button .header_register-button {
+    margin: 12px 0;
+}
+
 .header {
     background-image: url(../img/header-background-fill.jpg);
     background-repeat: no-repeat;
@@ -304,6 +416,20 @@ body {
     height: 250px;
     position: relative;
     max-width: 400px;
+}
+
+@media screen and (min-width: 400px) {
+    .speaker {
+        margin: 0 auto;
+        width: 400px;
+    }
+}
+
+@media screen and (min-width: 480px) {
+    .speaker {
+        width: auto;
+        margin: 0;
+    }
 }
 
 .speaker > p {
