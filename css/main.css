@@ -530,8 +530,8 @@ body {
 
     .logo__samsung {
         margin-left: -8px;
-        position: initial;
-        bottom: initial;
+        position: relative;
+        top: 2px;
     }
 }
 
