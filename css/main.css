@@ -492,7 +492,9 @@ body {
 }
 
 .logo__finnair {
-    height: 18px;
+    height: 16px;
+    position: relative;
+    top: 2px;
 }
 
 .logo__fraktio {
