@@ -463,6 +463,77 @@ body {
     bottom: 16px;
 }
 
+.logos {
+    text-align: center;
+    position: relative;
+    margin-bottom: 32px;
+}
+
+.logos:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.logo {
+    display: block;
+    height: 50px;
+    margin: 16px auto;
+}
+
+.logo__google {
+    position: relative;
+    top: 8px;
+}
+
+.logo__finnair {
+    height: 20px;
+}
+
+.logo__fraktio {
+    height: 30px;
+    position: relative;
+    top: 6px;
+}
+
+.logo__github {
+    height: 40px;
+}
+
+.logo__samsung {
+    position: relative;
+    bottom: 4px;
+}
+
+@media screen and (min-width: 480px) {
+    .logo {
+        display: inline;
+        margin: 16px 8px;
+    }
+
+    .logo__google {
+        position: relative;
+        top: 4px;
+    }
+
+    .logo__fraktio {
+        position: initial;
+        top: initial;
+    }
+
+    .logo__samsung {
+        margin-left: -8px;
+        position: initial;
+        bottom: initial;
+    }
+}
+
+
 .afterparty {
     background: #fe5a2f;
     color: #f5e2bf;
